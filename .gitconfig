@@ -1,0 +1,22 @@
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[user]
+	name = ZHassan31
+	email = zubayr141@hotmail.com
+[core]
+	excludesfile = /Users/zubayr/.gitignore_global
+	autocrlf = input
+	editor = vim
+[alias]
+	ac = !git add . && git commit -m
+	amend = !git add . && git commit --amend --no-edit
+	ch = checkout
+	st = status
+	s = status
+[diff]
+	tool = vimdiff
+[init]
+	defaultBranch = main
